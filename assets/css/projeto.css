@@ -1,0 +1,143 @@
+/* Projetos*/
+p{
+	text-align: justify;
+	text-justify: inter-word;
+	color: #BFA393; 
+}
+.container_project{
+	background-color: #F2F2F2;
+	background: repeat;
+	display: grid;
+	grid-template-columns: 50% 1fr;
+	grid-gap: 1rem;
+	justify-content: space-evenly;
+	grid-auto-flow: row;
+	align-items: flex-start;
+	flex-direction:row;
+	font-size: 1.5rem;
+	text-align: center;
+	min-width: 50rem;
+}
+
+.item_imagem{
+	width: fit-content;
+	padding: 1rem;
+	margin: 1rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.image_project{
+	width: 80%;
+}
+
+.item_equipe{
+	padding: 1rem;
+	margin: 1rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.item_titulo{
+	padding: 1rem;
+	color: #A6836F;
+	margin: 1rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.item_descricao{
+	padding: 1rem;
+	margin: 1rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	align-items: flex-end;
+}
+
+.title {
+	font-size: 1.75rem;
+	color: #A6836F;
+}
+
+.main_title{
+	font-size: 5rem;
+	color: #A6836F;
+}
+.item_title_project{
+	padding: 1rem;
+	margin: 1rem;
+	font-size: 4rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+.item_local{
+	padding: 1rem;
+	margin: 1rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 2;}
+
+  .item_recursos{
+   padding: 1rem;
+   margin: 1rem;
+   flex-grow: 1;
+   flex-shrink: 1;
+   grid-row-start: 4;
+   grid-row-end: 5;
+   grid-column-start: 2;
+   grid-column-end: 2;
+ }
+
+ @media (max-width: 68rem) {
+   .image_project{
+    width: 80%;
+  }
+  .container_project{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    grid-auto-flow: row;
+    align-items: flex-start;
+    flex-direction:row;
+    font-size: 1.5rem;
+    text-align: center;
+    min-width: 10rem;
+  }
+
+  .title {
+    text-align: left;
+    font-size:3rem;
+    margin: 0rem;
+    
+  }
+
+  .main_title{
+    text-align: center;
+    font-size:5rem;
+  }
+}

@@ -1,5 +1,164 @@
-/* Index styles */
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Roboto+Condensed&display=swap');
 
-/* Categorias styles */
 
-/* Projeto styles */
+
+
+
+/* navbar styles */
+
+
+.navbar {
+	background-color: #A6836F;
+    display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 2em 1fr 3fr 2fr 2em;
+	grid-template-rows: 1fr min-content 1fr
+}
+
+.logo {
+	grid-column: 2;
+	grid-row: 2;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	width: fit-content;
+}
+
+.logo img {
+	border: hidden;
+	border-radius: 0.3em 0.7em
+}
+
+.navbar_items {
+	grid-column: 4;
+	grid-row: 2;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.navbar_links a {
+	margin: 1em;
+	padding:0.2em;
+	font-size: 1.3rem;
+	text-decoration: none;
+	font-family: 'Roboto Condensed';
+	border: solid #F2F2F2;
+	background-color: #04ADBF;
+	border-radius: 0.2em 0.4em;
+	color: white;
+}
+
+/* General Styles */
+
+.title {
+	font-family: 'Hepta Slab', sans-serif;
+	color: #04ADBF;
+	/* text-shadow: 0px 0px 0.5rem red; */
+	font-size: 1.1rem;
+	margin: 0.5em;
+}
+
+.corpo {
+	/* text-shadow: 0px 0px 0.5rem red; */
+	color: #04ADBF;
+	letter-spacing: 0.05em;
+	font-family: 'Roboto Condensed';
+}
+
+
+.button {
+	flex-basis: 45%;
+	height: fit-content;
+	min-height: 2.5em;
+	justify-content: center;
+	align-items: center;
+	background-color: #04ADBF;
+	font-family: 'Roboto Condensed';
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	border: hidden 0.25em;
+	border-radius: 0.1em;
+	padding-left: 0.5em;	
+	padding-right: 0.5em;	
+}
+
+
+
+@media screen and (max-width:68rem){
+	.navbar {
+		display: grid;
+		grid-gap: 1em;
+		grid-template-columns: 2em 1fr 3fr 2fr 2em;
+		grid-template-rows: 1fr min-content 1fr;
+	}
+	
+	.logo {
+		grid-column: 2;
+		grid-row: 2;
+		display: flex;
+		justify-self: center;
+		align-items: center;
+	}
+	
+	.logo img {
+		border: hidden;
+		height: 5em;
+		border-radius: 0.3em 0.7em
+	}
+	
+	.navbar_items {
+		grid-column: 4;
+		grid-row: 2;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: right;
+	}
+	
+	.navbar_links a {
+		font-size: 3rem;
+		border-radius: 0.2em 0.4em;
+	}
+	
+	/* General Styles */
+	
+	.title {
+		font-size: 3em;
+	}
+	
+	.corpo {
+		/* text-shadow: 0px 0px 0.5rem red; */
+		letter-spacing: 0.05em;
+		font-size: 2em;
+	}
+	
+	
+	.button {
+		flex-basis: 45%;
+		height: fit-content;
+		min-height: 2.5em;
+		justify-content: center;
+		align-items: center;
+		background-color: #04ADBF;
+		font-family: 'Roboto Condensed';
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		display: flex;
+		border: hidden 0.25em;
+		border-radius: 0.1em;
+		padding-left: 0.5em;	
+		padding-right: 0.5em;	
+	}
+	
+
+	
+
+
+
+
+}
